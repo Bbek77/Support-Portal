@@ -4,189 +4,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Find customer support for your account and orders.">
-  <title>Northstar | Customer Support</title>
+  <meta name="theme-color" content="#0b1020">
+  <title>Northstar Customer Support</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <header class="site-header" id="home">
-    <a class="brand" href="#home">
-      <span class="brand-icon">N</span>
-      <span>Northstar <span class="brand-light">Support</span></span>
-    </a>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="logo" href="index.html">
+        <span class="logo-icon" aria-hidden="true">✦</span>
+        <span>Northstar<span class="logo-accent"> Support</span></span>
+      </a>
 
-    <!-- CSS-only mobile navigation -->
-    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
-    <label for="menu-toggle" class="menu-button" aria-label="Toggle navigation">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
-
-    <nav class="site-nav" aria-label="Main navigation">
-      <a href="#home">Home</a>
-      <a href="#contact">Contact</a>
-      <a href="#faq">FAQs</a>
+      <a class="nav-link" href="#contact">Contact</a>
+      <a class="nav-link" href="#faq">FAQ</a>
     </nav>
   </header>
 
-  <main>
-    <!-- Hero -->
-    <section class="hero">
-      <p class="eyebrow">
-        <span class="eyebrow-line"></span>
-        NORTHSTAR CUSTOMER CARE
-      </p>
-
-      <h1>How can we <span>help you?</span></h1>
-
+  <main class="container">
+    <section class="hero" aria-labelledby="page-heading">
+      <p class="eyebrow">WE'RE HERE TO HELP</p>
+      <h1 id="page-heading">Northstar Customer Support</h1>
       <p class="hero-description">
-        A little help goes a long way. Find answers and support
-        for your account, orders, and questions.
+        Find help for your account and orders. Our support team is here
+        to help you find the answers you need.
       </p>
-
-      <a class="scroll-link" href="#contact">
-        Explore support <span>↓</span>
-      </a>
+      <a class="primary-button" href="#contact">Contact Support <span aria-hidden="true">→</span></a>
     </section>
 
-    <!-- Contact card -->
-    <section class="support-card" id="contact">
-      <div class="card-topline">
-        <span class="icon-tile" aria-hidden="true">✉</span>
+    <section class="support-card" id="contact" aria-labelledby="contact-heading">
+      <div class="section-icon" aria-hidden="true">✉</div>
+      <p class="eyebrow">GET IN TOUCH</p>
+      <h2 id="contact-heading">Contact support</h2>
+      <p>Need help with your account or an order? Reach out to our team.</p>
 
-        <span class="availability">
-          <span class="status-dot"></span>
-          Here to help
-        </span>
-      </div>
-
-      <p class="card-label">GET IN TOUCH</p>
-
-      <h2>Contact support</h2>
-
-      <p class="card-description">
-        Have a question or need a hand? Send our support team an email.
-      </p>
-
-      <a class="email-button" href="mailto:support@example.com">
-        <span>Email our support team</span>
-        <span class="button-arrow">↗</span>
-      </a>
-
-      <p class="email-address">
-        Or email us directly at
+      <div class="info-panel">
+        <span class="info-label">EMAIL SUPPORT</span>
         <a href="mailto:support@example.com">support@example.com</a>
-      </p>
-
-      <div class="divider"></div>
-
-      <div class="hours">
-        <div class="hours-icon" aria-hidden="true">◷</div>
-
-        <div class="hours-content">
-          <h3>Support hours</h3>
-          <p>Monday through Friday</p>
-          <p>9 a.m. to 5 p.m. Central Time.</p>
-        </div>
-
-        <span class="hours-badge">WEEKDAYS</span>
       </div>
 
-      <div class="order-note">
+      <div class="info-panel">
+        <span class="info-label">SUPPORT HOURS</span>
+        <p>Monday through Friday, 9 a.m. to 5 p.m. Central Time.</p>
+      </div>
+
+      <p class="order-reminder">
         <span aria-hidden="true">ⓘ</span>
-        <p>
-          Please include your order number when contacting support
-          so we can better assist you.
-        </p>
-      </div>
+        Please include your order number when contacting support.
+      </p>
     </section>
 
-    <!-- FAQ section -->
-    <section class="faq-section" id="faq">
-      <div class="section-heading">
-        <p class="card-label">NEED A QUICK ANSWER?</p>
-
-        <h2>Frequently asked questions<span>.</span></h2>
-
-        <p>Some helpful information to get you started.</p>
-      </div>
-
-      <div class="faq-list">
-        <details class="faq-item">
-          <summary>
-            How can I check my order status?
-            <span class="faq-plus"></span>
-          </summary>
-          <p>
-            Sign in to your account and open the Orders page to check
-            your order status. If you still need assistance, contact
-            our support team.
-          </p>
-        </details>
-
-        <details class="faq-item">
-          <summary>
-            How do I contact customer support?
-            <span class="faq-plus"></span>
-          </summary>
-          <p>
-            Email support@example.com. Include a description of your
-            question and your order number when relevant.
-          </p>
-        </details>
-
-        <details class="faq-item">
-          <summary>
-            When is customer support available?
-            <span class="faq-plus"></span>
-          </summary>
-          <p>
-            Our listed support hours are Monday through Friday,
-            9 a.m. to 5 p.m. Central Time.
-          </p>
-        </details>
-
-        <details class="faq-item">
-          <summary>
-            What should I include in my email?
-            <span class="faq-plus"></span>
-          </summary>
-          <p>
-            Describe your issue clearly and include your order number
-            if your question is about an order. Avoid sending passwords
-            or other sensitive account information.
-          </p>
-        </details>
-      </div>
-    </section>
-
-    <!-- Closing card -->
-    <section class="closing-card">
-      <span class="closing-symbol" aria-hidden="true">✳</span>
-
-      <h2>We're here when you need us.</h2>
-
-      <p>
-        Still have a question? Our team is just an email away.
+    <section class="faq-section" id="faq" aria-labelledby="faq-heading">
+      <p class="eyebrow">QUICK ANSWERS</p>
+      <h2 id="faq-heading">Frequently asked questions</h2>
+      <p class="section-description">
+        Find answers to common questions about your orders.
       </p>
 
-      <a class="closing-link" href="mailto:support@example.com">
-        Get in touch <span>↗</span>
-      </a>
+      <article class="faq-item">
+        <h3>How can I check my order status?</h3>
+        <p>Sign in to your account and open the Orders page.</p>
+      </article>
     </section>
 
-    <!-- Footer -->
-    <footer class="site-footer">
-      <a class="footer-brand" href="#home">
-        NORTHSTAR <span>SUPPORT</span>
-      </a>
-
-      <p>Customer support, made simple.</p>
-
-      <a class="back-to-top" href="#home">Back to top ↑</a>
-    </footer>
+    <section class="help-banner" aria-labelledby="help-heading">
+      <div>
+        <h2 id="help-heading">Still need help?</h2>
+        <p>Our support team is ready to assist you.</p>
+      </div>
+      <a class="secondary-button" href="mailto:support@example.com">Email us</a>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <a class="footer-logo" href="index.html">Northstar Support</a>
+    <p>Customer support made simple.</p>
+    <p class="copyright">&copy; 2026 Northstar Services. All rights reserved.</p>
+  </footer>
 </body>
 </html>
+ 

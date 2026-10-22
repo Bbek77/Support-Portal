@@ -1,5 +1,6 @@
 # Support-Portal
-#  Customer Support Portal
+
+# Customer Support Portal
 
 A static page that helps customers find support information.
 
